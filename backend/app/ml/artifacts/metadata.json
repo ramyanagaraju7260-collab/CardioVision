@@ -1,0 +1,66 @@
+{
+    "model_name": "CardioVision-Multimodal-Ensemble",
+    "algorithm": "Calibrated Random Forest & Gradient Boosting Classifier",
+    "version": "2.0.0",
+    "threshold": 0.5,
+    "status": "trained",
+    "mode": "production",
+    "modalities": [
+        "Retinal Fundus Microvasculature (AVR, Density, Tortuosity, Caliber)",
+        "Clinical EHR Vitals"
+    ],
+    "num_features": 12,
+    "features": [
+        "age",
+        "gender",
+        "systolic_bp",
+        "diastolic_bp",
+        "cholesterol",
+        "bmi",
+        "diabetes",
+        "smoking_status",
+        "avr",
+        "vessel_density",
+        "vessel_tortuosity",
+        "mean_caliber_um"
+    ],
+    "trained_at": "2026-09-05T04:31:39.835665+00:00",
+    "dataset": {
+        "total_samples": 235,
+        "positive_cases": 107,
+        "negative_cases": 128,
+        "validation_method": "5-Fold Stratified Cross-Validation"
+    },
+    "evaluation": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "brier_score": 0.0013,
+        "confusion_matrix": [
+            [
+                128,
+                0
+            ],
+            [
+                0,
+                107
+            ]
+        ]
+    },
+    "feature_importances": {
+        "systolic_bp": 0.225,
+        "vessel_tortuosity": 0.1893,
+        "avr": 0.1885,
+        "vessel_density": 0.1293,
+        "age": 0.0846,
+        "cholesterol": 0.0805,
+        "bmi": 0.0356,
+        "diastolic_bp": 0.0348,
+        "mean_caliber_um": 0.0231,
+        "diabetes": 0.007,
+        "smoking_status": 0.0016,
+        "gender": 0.0008
+    }
+}

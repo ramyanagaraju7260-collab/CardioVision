@@ -1,0 +1,110 @@
+{
+    "features": [
+        {
+            "name": "age",
+            "type": "numerical",
+            "unit": "years",
+            "range": [
+                1,
+                120
+            ]
+        },
+        {
+            "name": "gender",
+            "type": "categorical",
+            "categories": [
+                "Male",
+                "Female",
+                "Other"
+            ]
+        },
+        {
+            "name": "systolic_bp",
+            "type": "numerical",
+            "unit": "mmHg",
+            "range": [
+                50,
+                300
+            ]
+        },
+        {
+            "name": "diastolic_bp",
+            "type": "numerical",
+            "unit": "mmHg",
+            "range": [
+                30,
+                250
+            ]
+        },
+        {
+            "name": "cholesterol",
+            "type": "numerical",
+            "unit": "mg/dL",
+            "range": [
+                50,
+                600
+            ]
+        },
+        {
+            "name": "bmi",
+            "type": "numerical",
+            "unit": "kg/m\u00b2",
+            "range": [
+                10,
+                80
+            ]
+        },
+        {
+            "name": "diabetes",
+            "type": "boolean"
+        },
+        {
+            "name": "smoking_status",
+            "type": "categorical",
+            "categories": [
+                "never",
+                "former",
+                "current"
+            ]
+        },
+        {
+            "name": "avr",
+            "type": "numerical",
+            "unit": "ratio",
+            "range": [
+                0.3,
+                1.2
+            ],
+            "description": "Arteriolar-to-Venular Ratio"
+        },
+        {
+            "name": "vessel_density",
+            "type": "numerical",
+            "unit": "percentage",
+            "range": [
+                1.0,
+                35.0
+            ]
+        },
+        {
+            "name": "vessel_tortuosity",
+            "type": "numerical",
+            "unit": "index",
+            "range": [
+                1.0,
+                2.5
+            ]
+        },
+        {
+            "name": "mean_caliber_um",
+            "type": "numerical",
+            "unit": "micrometers",
+            "range": [
+                5.0,
+                50.0
+            ]
+        }
+    ],
+    "target": "cardiovascular_risk_label",
+    "version": "2.0.0"
+}
